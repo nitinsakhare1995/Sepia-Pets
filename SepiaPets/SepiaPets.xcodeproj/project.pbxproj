@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		188CD63F29B5C370005BFCDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CD63E29B5C370005BFCDC /* AppDelegate.swift */; };
 		188CD64129B5C371005BFCDC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CD64029B5C371005BFCDC /* SceneDelegate.swift */; };
-		188CD64329B5C371005BFCDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CD64229B5C371005BFCDC /* ViewController.swift */; };
+		188CD64329B5C371005BFCDC /* PetListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CD64229B5C371005BFCDC /* PetListVC.swift */; };
 		188CD64629B5C371005BFCDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188CD64429B5C371005BFCDC /* Main.storyboard */; };
 		188CD64829B5C372005BFCDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 188CD64729B5C372005BFCDC /* Assets.xcassets */; };
 		188CD64B29B5C372005BFCDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188CD64929B5C372005BFCDC /* LaunchScreen.storyboard */; };
@@ -18,6 +18,13 @@
 		188CD66229B5C373005BFCDC /* SepiaPetsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CD66129B5C373005BFCDC /* SepiaPetsUITestsLaunchTests.swift */; };
 		188CD67129B5C470005BFCDC /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = 188CD66F29B5C470005BFCDC /* config.json */; };
 		188CD67229B5C470005BFCDC /* pets_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 188CD67029B5C470005BFCDC /* pets_list.json */; };
+		188CD67429B5C6C9005BFCDC /* PetListTabeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CD67329B5C6C9005BFCDC /* PetListTabeViewCell.swift */; };
+		188CD67629B5C847005BFCDC /* PetListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CD67529B5C847005BFCDC /* PetListModel.swift */; };
+		188CD67829B5CD0C005BFCDC /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CD67729B5CD0C005BFCDC /* DataProvider.swift */; };
+		188CD67A29B5CE2D005BFCDC /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CD67929B5CE2D005BFCDC /* Utils.swift */; };
+		188CD67C29B5D057005BFCDC /* PetListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CD67B29B5D057005BFCDC /* PetListViewModel.swift */; };
+		188CD68029B5EAB2005BFCDC /* PetDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CD67F29B5EAB2005BFCDC /* PetDetailVC.swift */; };
+		188CD68B29B5FC0B005BFCDC /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 188CD68A29B5FC0B005BFCDC /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +48,7 @@
 		188CD63B29B5C370005BFCDC /* SepiaPets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SepiaPets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		188CD63E29B5C370005BFCDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		188CD64029B5C371005BFCDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		188CD64229B5C371005BFCDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		188CD64229B5C371005BFCDC /* PetListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetListVC.swift; sourceTree = "<group>"; };
 		188CD64529B5C371005BFCDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		188CD64729B5C372005BFCDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		188CD64A29B5C372005BFCDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +60,13 @@
 		188CD66129B5C373005BFCDC /* SepiaPetsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepiaPetsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		188CD66F29B5C470005BFCDC /* config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
 		188CD67029B5C470005BFCDC /* pets_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pets_list.json; sourceTree = "<group>"; };
+		188CD67329B5C6C9005BFCDC /* PetListTabeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetListTabeViewCell.swift; sourceTree = "<group>"; };
+		188CD67529B5C847005BFCDC /* PetListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetListModel.swift; sourceTree = "<group>"; };
+		188CD67729B5CD0C005BFCDC /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		188CD67929B5CE2D005BFCDC /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		188CD67B29B5D057005BFCDC /* PetListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetListViewModel.swift; sourceTree = "<group>"; };
+		188CD67F29B5EAB2005BFCDC /* PetDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailVC.swift; sourceTree = "<group>"; };
+		188CD68A29B5FC0B005BFCDC /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,14 +117,17 @@
 		188CD63D29B5C370005BFCDC /* SepiaPets */ = {
 			isa = PBXGroup;
 			children = (
-				188CD66E29B5C439005BFCDC /* Files */,
-				188CD63E29B5C370005BFCDC /* AppDelegate.swift */,
-				188CD64029B5C371005BFCDC /* SceneDelegate.swift */,
-				188CD64229B5C371005BFCDC /* ViewController.swift */,
+				188CD68129B5F22E005BFCDC /* App */,
+				188CD68229B5F23B005BFCDC /* UI */,
+				188CD68829B5F291005BFCDC /* DataManager */,
+				188CD68729B5F287005BFCDC /* Utils */,
+				188CD68629B5F27E005BFCDC /* Model */,
+				188CD66E29B5C439005BFCDC /* Resources */,
 				188CD64429B5C371005BFCDC /* Main.storyboard */,
 				188CD64729B5C372005BFCDC /* Assets.xcassets */,
 				188CD64929B5C372005BFCDC /* LaunchScreen.storyboard */,
 				188CD64C29B5C372005BFCDC /* Info.plist */,
+				188CD68A29B5FC0B005BFCDC /* .swiftlint.yml */,
 			);
 			path = SepiaPets;
 			sourceTree = "<group>";
@@ -132,13 +149,81 @@
 			path = SepiaPetsUITests;
 			sourceTree = "<group>";
 		};
-		188CD66E29B5C439005BFCDC /* Files */ = {
+		188CD66E29B5C439005BFCDC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				188CD66F29B5C470005BFCDC /* config.json */,
 				188CD67029B5C470005BFCDC /* pets_list.json */,
 			);
-			path = Files;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		188CD68129B5F22E005BFCDC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				188CD63E29B5C370005BFCDC /* AppDelegate.swift */,
+				188CD64029B5C371005BFCDC /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		188CD68229B5F23B005BFCDC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				188CD68429B5F254005BFCDC /* PetDetail */,
+				188CD68329B5F24B005BFCDC /* PetList */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		188CD68329B5F24B005BFCDC /* PetList */ = {
+			isa = PBXGroup;
+			children = (
+				188CD68529B5F26A005BFCDC /* Cell */,
+				188CD64229B5C371005BFCDC /* PetListVC.swift */,
+				188CD67B29B5D057005BFCDC /* PetListViewModel.swift */,
+			);
+			path = PetList;
+			sourceTree = "<group>";
+		};
+		188CD68429B5F254005BFCDC /* PetDetail */ = {
+			isa = PBXGroup;
+			children = (
+				188CD67F29B5EAB2005BFCDC /* PetDetailVC.swift */,
+			);
+			path = PetDetail;
+			sourceTree = "<group>";
+		};
+		188CD68529B5F26A005BFCDC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				188CD67329B5C6C9005BFCDC /* PetListTabeViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		188CD68629B5F27E005BFCDC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				188CD67529B5C847005BFCDC /* PetListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		188CD68729B5F287005BFCDC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				188CD67929B5CE2D005BFCDC /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		188CD68829B5F291005BFCDC /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				188CD67729B5CD0C005BFCDC /* DataProvider.swift */,
+			);
+			path = DataManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +236,7 @@
 				188CD63729B5C370005BFCDC /* Sources */,
 				188CD63829B5C370005BFCDC /* Frameworks */,
 				188CD63929B5C370005BFCDC /* Resources */,
+				188CD68929B5F861005BFCDC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -245,6 +331,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188CD68B29B5FC0B005BFCDC /* .swiftlint.yml in Resources */,
 				188CD64B29B5C372005BFCDC /* LaunchScreen.storyboard in Resources */,
 				188CD67129B5C470005BFCDC /* config.json in Resources */,
 				188CD64829B5C372005BFCDC /* Assets.xcassets in Resources */,
@@ -269,14 +356,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		188CD68929B5F861005BFCDC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint autocorrect --format\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		188CD63729B5C370005BFCDC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				188CD64329B5C371005BFCDC /* ViewController.swift in Sources */,
+				188CD67829B5CD0C005BFCDC /* DataProvider.swift in Sources */,
+				188CD68029B5EAB2005BFCDC /* PetDetailVC.swift in Sources */,
+				188CD67429B5C6C9005BFCDC /* PetListTabeViewCell.swift in Sources */,
+				188CD67C29B5D057005BFCDC /* PetListViewModel.swift in Sources */,
+				188CD64329B5C371005BFCDC /* PetListVC.swift in Sources */,
+				188CD67A29B5CE2D005BFCDC /* Utils.swift in Sources */,
 				188CD63F29B5C370005BFCDC /* AppDelegate.swift in Sources */,
 				188CD64129B5C371005BFCDC /* SceneDelegate.swift in Sources */,
+				188CD67629B5C847005BFCDC /* PetListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,7 +573,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -488,7 +601,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -5,32 +5,37 @@
 //  Created by Nitin Sakhare on 06/03/23.
 //
 
+// Import XCTest framework for writing unit tests
 import XCTest
+// Import the app module to test its functionality
 @testable import SepiaPets
 
+// Declare a final class that inherits from XCTestCase to write unit tests
 final class SepiaPetsTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    // Define a test case that reads the JSON file containing pet data
+    func testReadJSONFile() {
+        // Get the bundle for the current test class
+        let bundle = Bundle(for: type(of: self))
+        // Get the URL of the JSON file to test, or fail if it's missing
+        guard let url = bundle.url(forResource: "pets_list", withExtension: "json") else {
+            XCTFail("Missing file: pets_list.json")
+            return
+        }
+        
+        do {
+            // Read the JSON data from the file
+            let jsonData = try Data(contentsOf: url)
+            // Parse the JSON data
+            let json = try JSONSerialization.jsonObject(with: jsonData, options: [])
+            // Check that the parsed JSON is not nil and is of type [String: Any]
+            XCTAssertNotNil(json)
+            XCTAssertTrue(json is [String: Any])
+        } catch {
+            // Fail the test if there's an error while reading or parsing the JSON file
+            XCTFail("Failed to read or parse JSON file: \(error.localizedDescription)")
         }
     }
-
+    
 }
+
